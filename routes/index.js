@@ -36,7 +36,7 @@ client.connect((err) => {
     res,
     next
   ) {
-    const url = req.protocol + 's://' + req.get('host');
+    // const url = req.protocol + 's://' + req.get('host');
     const {
       file,
       body: {
@@ -53,7 +53,7 @@ client.connect((err) => {
     res.send(req.file);
 
     const eventData = {
-      imageBanner: url + '/images/' + fileName,
+      imageBanner: '/images/' + fileName,
       title,
       description,
       date,
