@@ -36,7 +36,7 @@ client.connect((err) => {
     res,
     next
   ) {
-    const url = req.protocol + '://' + req.get('host');
+    const url = req.protocol + 's://' + req.get('host');
     const {
       file,
       body: {
